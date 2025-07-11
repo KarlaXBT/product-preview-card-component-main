@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* Primary */
+  --green-500: hsl(158, 36%, 37%);
+  --green-700: hsl(158, 42%, 18%);
+
+  /* Neutral */
+  --black: hsl(212, 21%, 14%);
+  --grey: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Fonts */
+  --font-base: "Montserrat", sans-serif;
+  --font-heading: "Fraunces", serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.4rem;
+  font-family: var(--font-base), sans-serif;
+  font-weight: 500;
+  background-color: var(--cream);
+  color: var(--grey);
+  padding: 1.5rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--white);
+  border-radius: 1rem;
+  overflow: hidden;
+  max-width: 60rem;
+}
+
+.product-card__img {
+  flex: 1;
+  max-width: 50%;
+}
+
+.product-card__img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
